@@ -1,4 +1,5 @@
 # Django #
+db.sqlite3
 *.log
 *.pot
 *.pyc
@@ -6,6 +7,7 @@ __pycache__
 *.stackdump
 media
 /staticfiles
+
 # Backup files # 
 *.bak 
 
