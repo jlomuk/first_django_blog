@@ -17,8 +17,18 @@
 				<a href="{% url 'post_new' %}">+Опубликовать новый пост</a>
 			</div>
 		</header>
+			{% if user.is_authenticated  %}
+				<p>Вы вошли как: {{user.username}}</p>
+				<a href="{% url 'logout' %}">Выход</a><br>
+			{% else%}
+				<p>Гость</p>
+				<a href="{% url 'login' %}">Вход</a><br>
+			
+				
+			{% endif %}
 			{% block content %}
 			{% endblock content %}		
+			
 	</div>	
 </body>
 </html>
