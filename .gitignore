@@ -3,9 +3,9 @@
 *.pot
 *.pyc
 __pycache__
-
+*.stackdump
 media
-
+/staticfiles
 # Backup files # 
 *.bak 
 
